@@ -13,11 +13,12 @@ use src\CalculatorInterface;
 class AdditionClient implements CalculatorInterface
 {
 
-    public function __construct()
-    {
-    }
-
-
+    /**
+     * Addition business logic
+     * @param $n1
+     * @param $n2
+     * @return integer
+     */
     public function calculate($n1, $n2)
     {
         return $n1 + $n2;

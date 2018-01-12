@@ -16,6 +16,11 @@ use src\client\SubtractionClient;
 class CalculatorFactory
 {
 
+    /**
+     * Returns client of specific operation
+     * @param $type
+     * @return null|AdditionClient|DivisionClient|MultiplicationClient|SubtractionClient
+     */
     public static function build($type)
     {
 

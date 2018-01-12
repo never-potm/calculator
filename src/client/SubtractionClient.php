@@ -13,11 +13,13 @@ use src\CalculatorInterface;
 class SubtractionClient implements CalculatorInterface
 {
 
-    public function __construct()
-    {
-    }
 
-
+    /**
+     * Subtraction business logic
+     * @param $n1
+     * @param $n2
+     * @return integer
+     */
     public function calculate($n1, $n2)
     {
         return $n1 - $n2;

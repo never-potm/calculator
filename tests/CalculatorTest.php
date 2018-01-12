@@ -27,6 +27,9 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->calc = null;
     }
 
+    /**
+     * Test for Addition operation
+     */
     public function testAddChecksOut()
     {
         $factory = $this->createFactory('add');
@@ -36,6 +39,9 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(3, $res, 'Result of `add` checks out');
     }
 
+    /**
+     * Test for Subtraction operation
+     */
     public function testSubtractionChecksOut()
     {
         $factory = $this->createFactory('subtract');
@@ -45,6 +51,9 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(0, $res, 'Result of `subract` checks out');
     }
 
+    /**
+     * Test for Multiplication operation
+     */
     public function testMultiplicationChecksOut()
     {
         $factory = $this->createFactory('multiply');
@@ -54,6 +63,9 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(2, $res, 'Result of `multiply` checks out');
     }
 
+    /**
+     * Test for Division operation
+     */
     public function testDivideChecksOut()
     {
         $factory = $this->createFactory('divide');
@@ -63,6 +75,12 @@ class CalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(1, $res, 'Result of `division` checks out');
     }
 
+
+    /**
+     * Returns an object of specific operation client
+     * @param $type
+     * @return null|DivisionClient|MultiplicationClient|SubtractionClient|AdditionClient
+     */
     public function createFactory($type)
     {
         return CalculatorFactory::build($type);

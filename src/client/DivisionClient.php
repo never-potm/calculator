@@ -13,10 +13,12 @@ use src\CalculatorInterface;
 class DivisionClient implements CalculatorInterface
 {
 
-    public function __construct()
-    {
-    }
-
+    /**
+     * Division business logic
+     * @param $n1
+     * @param $n2
+     * @return float|int
+     */
     public function calculate($n1, $n2)
     {
         return $n1 / $n2;
