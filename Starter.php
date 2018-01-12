@@ -20,7 +20,12 @@ $number2 = $argv[2];
 $operation = $argv[3];
 
 try {
-    echo $calculator->calculate($number1, $number2, $operation);
+
+    if(is_int($number1) && is_int($number2)) {
+        echo $calculator->calculate($number1, $number2, $operation);
+    } else {
+        echo 'Inputs must be integers';
+    }
 }
 catch (\DivisionByZeroError $e) {
     echo $e->getMessage();
