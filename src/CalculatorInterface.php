@@ -11,10 +11,5 @@ namespace src;
 interface CalculatorInterface
 {
 
-    public function add($n1, $n2);
-    public function subtract($n1, $n2);
-    public function multiply($n1, $n2);
-    public function divide($n1, $n2);
-    public function vat($n1, $n2);
-
+    public function calculate($n1, $n2);
 }

@@ -10,7 +10,7 @@ use src\Calculator;
 
 $calculator = new Calculator();
 
-if (!isset($argv[2])) {
+if (!isset($argv[3])) {
     echo 'Operation missing ' . PHP_EOL;
     exit(0);
 }
