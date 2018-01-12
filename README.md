@@ -1,3 +1,4 @@
+## Problem
 We want to build a calculator that receives two numbers and does an operation.
 
 We do not know which kind of operations we want to do yet, we will decide them in the future and this calculator may have many complex operations.
@@ -27,3 +28,15 @@ Implement:
 
 Optional:
 The calculator should Trigger an Event at the end of the operation which contains the two numbers, operation and result.
+
+## How to run ?
+
+You can run this code using `php Starter.php 1a 2 <operation-type>`
+Operation types:
+- add
+- subtract
+- multiply
+- divide
+
+## PHPUnit tests
+You can run PHPUnit tests using `php \vendor\phpunit\phpunit\phpunit`
